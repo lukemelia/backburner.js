@@ -1,6 +1,5 @@
 # backburner.js [![Build Status](https://travis-ci.org/ebryn/backburner.js.png?branch=master)](https://travis-ci.org/ebryn/backburner.js)
-A rewrite of the Ember.js run loop as a generic microlibrary.
-
+A microlibrary [used by Ember.js](https://github.com/emberjs/ember.js/blob/master/packages/ember-metal/lib/run_loop.js) to power its run loop. Allows scheduling of functions on queues, to be executed at the most appropriate time. This allows for coalescing of changes before rendering, and to batch DOM reads and writes separately for optimal performance.
 
 ## Downloads
 
